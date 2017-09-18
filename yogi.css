@@ -1,0 +1,26 @@
+.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+    padding-right: 0;
+}
+body, h3 {
+    font-family: 'Roboto Mono'
+}
+h3 {
+    margin-top: 32px;
+}
+a.mdl-js-ripple-effect {
+    position: relative;
+}
+.mdl-layout__drawer {
+    width: 240px;
+    left: 0px;
+}
+.demo-card-wide.mdl-card {
+    width: 512px;
+  }
+  .demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 320px;
+  }
+  .demo-card-wide > .mdl-card__menu {
+    color: #fff;
+  }
