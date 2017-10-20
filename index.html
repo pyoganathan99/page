@@ -1,8 +1,147 @@
 <html>
+    
     <head>
-        <title>Yoganathan</title>
+        <title>Website</title>
+    
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
     </head>
+    
+    <link rel="stylesheet" href="yogi.css">
+    <link rel="stylesheet" href="carousel.css">
+    
     <body>
-        Hello
+                    
+        <div class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header mdl-shadow--2dp">
+            <!-- Top row, always visible -->
+            <div class="main-title mdl-layout__header-row" style="padding-top:12px;">
+                <!-- Title -->
+                <div class="mdl-layout-spacer"></div>
+                <h3>Yoganathan</h3>
+                <div class="mdl-layout-spacer"></div>
+            </div>
+            <!-- Bottom row, not visible on scroll -->
+            <div class="mdl-layout__header-row" style="white-space:nowrap; overflow:auto;">
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Home</a>
+                <a class="mdl-navigation__link" href="">About us</a>
+                <a class="mdl-navigation__link" href="">Web</a>
+                <a class="mdl-navigation__link" href="">Mobile</a>            
+                <a class="mdl-navigation__link" href="">Something</a>
+                <a class="mdl-navigation__link" style=" margin-right:12px;" href="">Link</a>
+                </nav>
+                
+                <div class="mdl-layout-spacer"></div>
+            </div>     
+            
+            </header>
+            <div class="mini-nav mdl-layout__header-row mdl-shadow--4dp" style="white-space:nowrap; overflow:auto; background:white">
+                <div class="mdl-layout-spacer"></div>
+                
+                <nav class="my-nav mdl-navigation">
+                    <a class="mdl-navigation__link" style="color: gray;" href="#">Section 1</a>
+                    <i class="material-icons" style="color:gray">keyboard_arrow_right</i>
+                    <a class="mdl-navigation__link" style="color: gray;" href="#">Address</a>
+                    <i class="material-icons" style="color:gray">keyboard_arrow_right</i>
+                    <a class="mdl-navigation__link" style="color: gray;" href="#">Works</a>
+                    <i class="material-icons" style="color:gray">keyboard_arrow_right</i>
+                    <a class="mdl-navigation__link" style="color: gray; margin-right:12px;" href="">More info</a>
+                </nav>
+                
+                <div class="mdl-layout-spacer"></div>
+            </div> 
+
+            <main class="mdl-layout__content" style=" background:#fff;">
+                <div class="mdl-layout--fixed-drawer">
+                    <div class="mdl-layout__drawer" style="position:fixed">
+                        <nav class="mdl-navigation" style="margin-top:160px">
+                            <a class="mdl-navigation__link" href="#">Section 1</a>
+                            <a class="mdl-navigation__link" href="#">Address</a>
+                            <a class="mdl-navigation__link" href="#">Works</a>
+                            <a class="mdl-navigation__link" href="#">More info</a>
+                        </nav>
+                    </div>
+                    <!-- <main style="padding:24px; margin-left:180px;">
+                        <div>
+                            <center>
+                                <div id="content-holder" style="margin-top:12px">
+                                    <div class="mdl-spinner mdl-js-spinner is-active"></div>
+                                </div>
+                            </center>                  
+                        </div>
+    
+    
+                    </main> -->
+                </div>
+            </main>
+        </div>
     </body>
-</html>
+    
+     <!-- <script>
+        var mTimeOut;
+
+        var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+               document.getElementById("content-holder").innerHTML = this.responseText;
+              }
+            };
+            xhttp.open("GET", "carouselcontent.html", true);
+            xhttp.send();
+        function hello(a){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+               document.getElementById("content-holder").innerHTML = this.responseText;
+               showSlides(slideIndex);
+              }
+            };
+            xhttp.open("GET",a, true);
+            xhttp.send();
+        }
+            
+        var slideIndex = 1;
+        mTimeOut = setTimeout(function(){ plusSlides(1); }, 3000);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1} 
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none"; 
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block"; 
+          dots[slideIndex-1].className += " active";
+    
+          clearTimeout(mTimeOut);
+          mTimeOut=setTimeout(function(){ plusSlides(1); }, 3000);
+        }
+
+        
+        </script>  -->
+    
+    </html>
+    
