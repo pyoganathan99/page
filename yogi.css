@@ -1,8 +1,37 @@
 .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
     padding-right: 0;
 }
+.mdl-layout__header-row {
+    padding: 0px;
+}
+.mdl-layout__header-row > h3 {
+    font-size: 34px; 
+}
+
+.my-nav > a {
+    color: gray;
+}
+.mini-nav {
+    display: none;
+}
+@media only screen and (max-width: 500px) {
+    .main-title{
+        padding-top: 0px;
+        height: 48px;
+    }
+    .mdl-layout__header-row > h3 {
+        font-size: 24px; 
+        padding-top: 0px;
+        margin-top:0px;
+        margin-bottom:0px;
+        padding-bottom:0px;
+    }
+    .mini-nav{
+        display: block;
+    }
+}
 body, h3 {
-    font-family: 'Roboto Mono'
+    font-family: 'Open Sans'
 }
 h3 {
     margin-top: 32px;
@@ -11,15 +40,15 @@ a.mdl-js-ripple-effect {
     position: relative;
 }
 .mdl-layout__drawer {
-    width: 240px;
+    width: 180px;
     left: 0px;
 }
 .demo-card-wide.mdl-card {
-    width: 512px;
+    width: 50vw;
   }
   .demo-card-wide > .mdl-card__title {
     color: #fff;
-    height: 320px;
+    height: 31.25vw;
   }
   .demo-card-wide > .mdl-card__menu {
     color: #fff;
