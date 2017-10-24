@@ -11,7 +11,8 @@
         <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-pink.min.css">
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <meta name="theme-color" content="#2196F3" />
+    
+        <meta name="theme-color" content="#2196F3" />
     </head>
     
     <link rel="stylesheet" href="yogi.css">
@@ -20,7 +21,7 @@
     <body>
                     
         <div class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <header class="mdl-layout__header mdl-shadow--2dp">
+            <header class="mdl-layout__header mdl-shadow--2dp mdl-layout__header--waterfall">
             <!-- Top row, always visible -->
             <div class="main-title mdl-layout__header-row" style="padding-top:12px;">
                 <!-- Title -->
@@ -29,10 +30,10 @@
                 <div class="mdl-layout-spacer"></div>
             </div>
             <!-- Bottom row, not visible on scroll -->
-            <div class="mdl-layout__header-row" style="white-space:nowrap; overflow:auto;">
+            <div class="yogi-header mdl-layout__header-row" style="white-space:nowrap; overflow:auto;">
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation -->
-                <nav class="mdl-navigation" style="padding-right:12px">
+                <nav class="yogi-navigation mdl-navigation">
                     <a class="mdl-navigation__link" href="">Home</a>
                     <a class="mdl-navigation__link" href="">About us</a>
                     <a class="mdl-navigation__link" href="">Web</a>
@@ -62,15 +63,19 @@
 
             <main class="mdl-layout__content" style=" background:#fff;margin-top:0px">
                 <div class="mdl-layout--fixed-drawer">
-                    <div class="mdl-layout__drawer" style="position:fixed">
-                        <nav class="mdl-navigation" style="margin-top:160px">
+                    <div class="mdl-layout__drawer" style="position:fixed; margin-top:64px;">
+                        <nav class="mdl-navigation">
                             <a class="mdl-navigation__link" href="#">Section 1</a>
                             <a class="mdl-navigation__link" href="#">Address</a>
                             <a class="mdl-navigation__link" href="#">Works</a>
                             <a class="mdl-navigation__link" href="#">More info</a>
+                            
+                            <div class="mdl-layout-spacer"></div>
+                            
+                            <a class="mdl-navigation__link" href="#">More info</a>
                         </nav>
                     </div>
-                    <main class="yogi-main">
+                    <main class="yogi-main" style="height:2000px">
                         <div>
                             <center>
                                 <div id="content-holder" style="margin-top:12px">
